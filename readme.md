@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 ### Configuration
 
-Note! You'll need an access to a PostgreSQL server and database in order to input data
+Note! You'll need an access to a PostgreSQL server and database in order to input data.
 
 Configure the database connection settings e.g. using a 'database.ini'-file or similar and add following parameters:
 ```
