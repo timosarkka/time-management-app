@@ -14,8 +14,8 @@ Clone the repository:
 
 
 ```
-git clone https://github.com/yourusername/timemanagement-reporting-system.git
-cd timemanagement-reporting-system
+git clone https://github.com/timosarkka/time-management-app.git
+cd time-management-app
 ```
 
 Install the required dependencies:
