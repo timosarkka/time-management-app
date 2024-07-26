@@ -21,7 +21,6 @@ cd time-management-app
 Install the required dependencies:
 
 ```
-Copy code
 pip install -r requirements.txt
 ```
 
