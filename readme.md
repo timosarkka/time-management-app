@@ -5,7 +5,7 @@ This repository contains two main applications:
 * Time Management App: Used by consultants to log their working hours.
 * Reporting Software App: Generates reports of logged hours and stores them in Azure Blob Storage.
 
-Note! You'll need an access to a PostgreSQL server and database in order to input data
+Note! You'll need an access to a PostgreSQL server and database in order to input data.
 
 ## Time Management App
 
