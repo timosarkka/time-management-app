@@ -1,11 +1,12 @@
 # Time Management and Reporting System
 
 ## Overview
-This repository contains two main applications:
-* Time Management App: Used by consultants to log their working hours.
-* Reporting Software App: Generates reports of logged hours and stores them in Azure Blob Storage.
 
-Note! You'll need an access to a PostgreSQL server and database in order to input data.
+This repository contains two main applications:
+* Time Management App: A very simple app used by consultants to log their working hours.
+* Reporting Software App: Generates a text-based report of logged hours and stores them in Azure Blob Storage.
+
+Note! You'll need access to a PostgreSQL server and database in order to test the apps and input data.
 
 ## Time Management App
 
@@ -60,46 +61,7 @@ The following endpoints are provided by the Flask API:
 
 ### Usage
 
-You can use the time management e.g. with Postman or use curl:
-
-Some example use cases:
-
-Fetch all working hours
-```
-curl -X GET http://localhost:5000/workinghours
-```
-
-Fetch working hours by ID
-```
-curl -X GET http://localhost:5000/workinghours/1
-```
-
-Create a new working hour entry
-```
-curl -X POST http://localhost:5000/workinghours -H "Content-Type: application/json" -d '{
-    "customerID": 1,
-    "employeeID": 1,
-    "startTime": "2024-05-05T08:00:00",
-    "endTime": "2024-05-05T17:00:00",
-    "lunchBreak": true
-}'
-```
-
-Update an existing working hour entry
-```
-curl -X PUT http://localhost:5000/workinghours/1 -H "Content-Type: application/json" -d '{
-    "customerID": 1,
-    "employeeID": 1,
-    "startTime": "2024-05-05T09:00:00",
-    "endTime": "2024-05-05T18:00:00",
-    "lunchBreak": false
-}'
-```
-
-Delete a working hour entry
-```
-curl -X DELETE http://localhost:5000/workinghours/1
-```
+You can use the time management app together with an API platform, e.g. Postman. Run the above API calls to fetch, create, update or delete hour entries.
 
 ## Reporting Software App
 
@@ -125,6 +87,7 @@ The Reporting Software App generates reports for the specified date and uploads 
 * Calculate cumulative working hours by customer
 
 ### API Endpoint
+
 The following endpoint is provided by the Flask API:
 
 GET /report: Generate a report and upload it to Azure Blob Storage.
