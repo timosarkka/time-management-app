@@ -8,6 +8,10 @@ This repository contains two main applications:
 
 Note! You'll need access to a PostgreSQL server and database in order to test the apps and input data.
 
+### Basic architecture
+
+![image](https://github.com/user-attachments/assets/52780dc1-53a3-4004-b5f9-05ef9e0e8f73)
+
 ## Time Management App
 
 ###  Installation
