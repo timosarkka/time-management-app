@@ -78,6 +78,8 @@ pip install -r requirements.txt
 
 ### Configuration
 
+Note! You'll need access to an Azure Storage Account to store the resulting time report. 
+
 Configure the database connection settings in config.py as described in the Time Management App section.
 
 Set up Azure Blob Storage connection by configuring the environment variable azure_storage_pass with your Azure Storage connection string.
