@@ -65,7 +65,7 @@ The following endpoints are provided by the Flask API:
 
 ### Usage
 
-You can use the time management app together with an API platform, e.g. Postman. Run the above API calls to fetch, create, update or delete hour entries.
+You can use the time management app together with an API platform, e.g. Postman. Run the above API calls to fetch, create, update or delete hour entries in your SQL database.
 
 ## Reporting Software App
 
